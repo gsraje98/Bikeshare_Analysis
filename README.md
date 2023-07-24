@@ -35,3 +35,7 @@ python bikeshare.py
 ### Credits
 * [Udacity Template](https://github.com/udacity/pdsnd_github.git) is being utilized as the base template for the project
 
+## Author
+[Gayatri](gayatrisraje@gmail.com)
+
+
