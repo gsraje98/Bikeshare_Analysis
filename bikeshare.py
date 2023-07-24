@@ -20,7 +20,7 @@ def get_month():
     month = None
     while month is None:
         month = input("Month - ").lower()
-        if month not in MONTH_DATA:
+        if month not in set(MONTH_DATA):
             print("\nIs there a spelling error. Can you please enter the correct month name")
             month = None
     
