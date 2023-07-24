@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+from datetime import timedelta
 import random
 
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -195,12 +196,12 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_travel_duration = df['Trip Duration'].sum()
-    print("Total Trip duration - {} seconds".format(total_travel_duration))
+    print("Total Trip duration - {} ".format(timedelta(seconds = int(total_travel_duration))))
 
 
     # display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print("Average Travel Duration - {} seconds".format(mean_travel_time))
+    print("Average Travel Duration - {} ".format(timedelta(seconds=int(mean_travel_time))))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
